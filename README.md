@@ -7,9 +7,9 @@ This is a simple React and Redux web application that generates random quotes. T
 Random Quotes: Get a new random quote with a click.  
 Tweet Quote: Share your favorite quotes on Twitter.
 
-## Technologies Used
-React
-Redux
-JavaScript
-HTML
-CSS
+## Technologies Used  
+React  
+Redux  
+JavaScript  
+HTML  
+CSS  
