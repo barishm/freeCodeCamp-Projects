@@ -13,3 +13,4 @@ Redux
 JavaScript  
 HTML  
 CSS  
+Bootstrap
