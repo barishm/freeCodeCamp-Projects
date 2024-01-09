@@ -8,7 +8,6 @@ function App() {
     <div className="App" style={{ backgroundColor: accentColor, color: accentColor }}>
       <header className="App-header">
         <Quote/>
-        <p style={{fontSize: "16px"}} className='mt-1'>by barishm</p>
       </header>
     </div>
   );

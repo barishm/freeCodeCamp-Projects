@@ -1,83 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-#quote-box {
-  border-radius: 3px;
-  position: relative;
-  width: 450px;
-  padding: 40px 50px;
-  display: table;
-  background-color: #fff;
-}
-#quote-box .quote-text {
-  text-align: center;
-  width: 450px;
-  height: auto;
-  clear: both;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: 1.75rem;
-}
-#quote-box .quote-author {
-    width: 450px;
-    height: auto;
-    clear: both;
-    padding-top: 20px;
-    font-size: 1rem;
-    text-align: right;
 }
 
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.quote-text {
+  font-size: 25px;
 }
 
-#quote-box .buttons .button#new-quote {
-  float: right;
-}
-#quote-box .buttons .button {
-  height: 38px;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  background-color: #333;
-  outline: none;
-  font-size: 0.85rem;
-  padding: 8px 18px 6px 18px;
-  opacity: 1;
-  cursor: pointer;
-}
-
-#quote-box .buttons {
-  width: 450px;
-  margin: auto;
-}
-
-div {
-  position: relative;
-  z-index: 2;
-}
-
-#quote-box .buttons .button#tweet-quote {
-    float: left;
-    padding: 0px;
-    padding-top: 6px;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-right: 5px;
-    height: 38px;
-    width: 40px;
-}
 
 
