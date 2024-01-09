@@ -11,38 +11,31 @@ const Quote = () => {
     const dispatch = useDispatch();
     const { quotes, currentQuote, accentColor } = useSelector((state) => state.quote);
 
-    const fetchData = async () => {
-      try {
-          const response = await fetch(quoteURL);
-          const json = await response.json();
-          dispatch(setQuotes(json.quotes));
-      } catch (error) {
-          console.error('Error fetching quotes:', error);
-      }
-    };
   
     const generateQuote = () => {
-      if (quotes.length === 0) {
-        fetchData();
-      } else {
-        const randomIndex = Math.floor(Math.random() * quotes.length);
-        const randomQuote = quotes[randomIndex];
-        const randomColor =
-          colorsArr[Math.floor(Math.random() * colorsArr.length)];
-  
-        dispatch(setCurrentQuote(randomQuote));
-        dispatch(setAccentColor(`#${randomColor}`));
-      }
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const randomQuote = quotes[randomIndex];
+      const randomColor =
+        colorsArr[Math.floor(Math.random() * colorsArr.length)];
+    
+      dispatch(setCurrentQuote(randomQuote));
+      dispatch(setAccentColor(`#${randomColor}`));
     };
   
     useEffect(() => {
+      const fetchData = async () => {
+        try {
+            const response = await fetch(quoteURL);
+            const json = await response.json();
+            dispatch(setQuotes(json.quotes));
+        } catch (error) {
+            console.error('Error fetching quotes:', error);
+        }
+      };
       fetchData();
-    }, []);
+    }, [dispatch]);
   
-    useEffect(() => {
-      generateQuote();
-    }, [quotes]); 
-  
+
     return (
       <div className='card' id='wrapper' >
         <div id='quote-box' className='card-body rounded-3'>
