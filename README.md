@@ -9,7 +9,8 @@ Tweet Quote: Share your favorite quotes on Twitter.
 
 ## Technologies Used  
 React  
-Redux  
+Redux Toolkit  
 JavaScript  
 HTML  
 CSS  
+Bootstrap  
