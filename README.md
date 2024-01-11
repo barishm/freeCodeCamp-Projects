@@ -13,4 +13,8 @@ Redux Toolkit
 JavaScript  
 HTML  
 CSS  
+<<<<<<< HEAD
 Bootstrap  
+=======
+Bootstrap
+>>>>>>> 309dbac9580628733a36147cfd84493ee9146402
